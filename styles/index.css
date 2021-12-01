@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+/* chargemnt doux de la page  */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+
+/* Style NAVABAR*/
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    /*align-items: center; centre vertical (displat flex est obligatoire)*/
+    /*justify-content: center; centre horizontal (displat flex est obligatoire)*/
+    justify-content: space-around;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    position: fixed;
+    width: 97vw;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    padding: 8px;
+    margin-top: 5px;
+    transition: all 0.4s ease;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navlinks a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info p {
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.info h1 {
+    font-size: 40px;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.image img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.media a{
+    text-decoration: none;
+    color: black;
+}
+
+.media i {
+    font-size: 25px;
+}
+
+
+/* Responsive Style*/
+
+@media screen and (max-width:655px) {
+    .navlinks {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    .info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .info p {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 90vw;
+    }
+    
+}
